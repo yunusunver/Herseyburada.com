@@ -1,0 +1,66 @@
+﻿@model HerseyBurada.Entities.EntitiesTable.Product
+
+@{
+    Layout = null;
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Detail</title>
+</head>
+<body>
+    <div>
+        <h4>Product</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ProductName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ProductDescripion)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ProductDescripion)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.CreatedDate)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ModifiedDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ModifiedDate)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Image)
+            </dt>
+    
+            <dd>
+               <img src="@Model.Image" class="img-responsive img-circle" width="100"/>
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

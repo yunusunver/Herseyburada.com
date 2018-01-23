@@ -1,0 +1,17 @@
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Business\bin\Debug\HerseyBurada.Business.dll.config
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Business\bin\Debug\HerseyBurada.Business.dll
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Business\bin\Debug\HerseyBurada.Business.pdb
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Business\bin\Debug\EntityFramework.dll
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Business\bin\Debug\HerseyBurada.DataAccess.dll
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Business\bin\Debug\HerseyBurada.Entities.dll
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Business\bin\Debug\HerseyBurada.DataAccess.pdb
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Business\bin\Debug\HerseyBurada.DataAccess.dll.config
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Business\bin\Debug\HerseyBurada.Entities.pdb
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Business\bin\Debug\HerseyBurada.Entities.dll.config
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Business\bin\Debug\EntityFramework.xml
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Business\obj\Debug\HerseyBurada.Business.csprojResolveAssemblyReference.cache
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Business\obj\Debug\HerseyBurada.Business.csproj.CoreCompileInputs.cache
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Business\obj\Debug\HerseyBurada.Business.dll
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Business\obj\Debug\HerseyBurada.Business.pdb

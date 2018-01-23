@@ -1,0 +1,11 @@
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Entities\bin\Debug\HerseyBurada.Entities.dll.config
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Entities\bin\Debug\HerseyBurada.Entities.dll
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Entities\bin\Debug\HerseyBurada.Entities.pdb
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Entities\bin\Debug\EntityFramework.dll
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Entities\bin\Debug\EntityFramework.xml
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Entities\obj\Debug\HerseyBurada.Entities.csprojResolveAssemblyReference.cache
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Entities\obj\Debug\HerseyBurada.Entities.csproj.CoreCompileInputs.cache
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Entities\obj\Debug\HerseyBurada.Entities.dll
+C:\Users\unver\source\repos\HerseyBurada\HerseyBurada.Entities\obj\Debug\HerseyBurada.Entities.pdb

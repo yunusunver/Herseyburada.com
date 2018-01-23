@@ -1,0 +1,67 @@
+﻿@model HerseyBurada.WebMVC.Models.ProductListViewModel
+
+@{
+    Layout = null;
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        <a href="/Product/Add" class="btn btn-primary">Ekle</a>
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                Product Name
+            </th>
+            <th>
+                Product Description
+            </th>
+            <th>
+                Created Date
+            </th>
+            <th>
+               modified Date
+            </th>
+            <th>
+                Image
+            </th>
+            <th  style="float:right">
+                İşlemler
+            </th>
+        </tr>
+    
+    @foreach (var item in Model.Products.ToList()) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductDescripion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModifiedDate)
+            </td>
+            <td>
+                <img src="@item.Image" width="100"/>
+            </td>
+            <td style="float:right">
+                <a href="/Product/Update/@item.Id" class="btn btn-success">Güncelle</a>
+                <a href="/Product/Detail/@item.Id" class="btn btn-warning">Detay</a>
+                <a href="/Product/Delete/@item.Id" class="btn btn-danger">Sil</a>
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

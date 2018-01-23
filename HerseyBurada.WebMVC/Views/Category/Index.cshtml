@@ -1,0 +1,37 @@
+﻿@model HerseyBurada.WebMVC.Models.CategoryListViewModel
+
+@{
+    Layout = null;
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        <a href="/Category/Add" class="btn btn-primary">Kategori Ekle</a>
+    </p>
+    <table class="table">
+        <tr>
+            <th>Kategori</th>
+            <th style="float:right">İşlemler</th>
+        </tr>
+    
+    @foreach (var item in Model.ListCategory.ToList()) {
+        <tr>
+            <td><a href="/Product/Index/@item.Id">@item.CategoryName</a> </td>
+            <td style="float:right">
+                <a href="/Category/Update/@item.Id" class="btn btn-success">Güncelle</a> 
+                <a href="/Category/Detail/@item.Id" class="btn btn-warning">Detay</a>
+                <a href="/Category/Delete/@item.Id" class="btn btn-danger">Sil</a>
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>
