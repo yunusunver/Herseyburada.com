@@ -14,6 +14,7 @@ namespace HerseyBurada.WebMVC.Controllers
         private CategoryManager category_manager=new CategoryManager();
        
 
+        //Kategorileri listeleyen action
         public ActionResult Index()
         {
             CategoryListViewModel model = new CategoryListViewModel
@@ -28,7 +29,7 @@ namespace HerseyBurada.WebMVC.Controllers
         {
             return View();
         }
-
+        //ekleme işlemini yaptığımız action
         [HttpPost]
         public ActionResult Add(Category category)
         {
@@ -52,7 +53,7 @@ namespace HerseyBurada.WebMVC.Controllers
             };
             return View(model.GetCategory);
         }
-
+        //güncelleme işlemini yaptığımız action
         [HttpPost]
         public ActionResult Update(int id,Category category)
         {
@@ -60,7 +61,7 @@ namespace HerseyBurada.WebMVC.Controllers
             category_manager.UpdateCategory(id,category);
             return RedirectToAction("Index", "Category");
         }
-
+        //silme işlemini yaptığımız action
         public ActionResult Delete(int id) {
 
             category_manager.DeleteCategory(id);

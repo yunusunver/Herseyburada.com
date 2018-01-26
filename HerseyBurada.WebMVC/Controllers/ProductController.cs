@@ -18,6 +18,8 @@ namespace HerseyBurada.WebMVC.Controllers
         // GET: Product
         public ActionResult Index(int id = 0)
         {
+
+            //gelen kategori id'si boş ise bütün ürünleri listelesin ,doluysa o category id ye göre ürünler gelsin.
             ProductListViewModel model = new ProductListViewModel();
             if (id == 0)
             {
@@ -38,17 +40,22 @@ namespace HerseyBurada.WebMVC.Controllers
             return View(model);
         }
 
+
         public ActionResult Add()
         {
+            //ekleme işleminde dropdown'a kategorileri veri tabanından çekerek sessiona atıyoruz.Bu session view da dropdown'u doldurmak için kullanacağız
             ViewBag.Kategoriler = new SelectList(category_manager.getCategory(), "Id", "CategoryName").ToList();
             return View();
         }
 
+        //Post işlemi olduğu için product tipinde nesne geliyor ve resim eklediğimiz için HttpPostedFileBase 'i kullanıyoruz.
         [HttpPost]
         public ActionResult Add(Product product,HttpPostedFileBase image) {
 
+            //sorunsuz geliyorsa
             if (ModelState.IsValid)
             {
+                //resim dolu geliyorsa resmi ekleme işlemini yaptığımız yer.
                 if (image!=null)
                 {
                     WebImage productImage = new WebImage(image.InputStream);
@@ -60,6 +67,7 @@ namespace HerseyBurada.WebMVC.Controllers
                     productImage.Save("~/img/products/" + newphoto);
                     product.Image = "/img/products/" + newphoto;
                 }
+                //gelen verileri veritabanına eklıyoruz.
                 product.CreatedDate = DateTime.Now;
                 product.ModifiedDate = DateTime.Now;
                 product_manager.AddProduct(product,product.CategoryId);

@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 
 namespace HerseyBurada.Entities.EntitiesTable
 {
+    //Ürünler tablosunun oluşturulduğu kısım.Validationların tanımlandığı yer.
+
     [Table("Product")]
     public class Product:BaseEntity
     {
@@ -25,6 +27,7 @@ namespace HerseyBurada.Entities.EntitiesTable
         [ForeignKey("Categories")]
         public int CategoryId { get; set; }
 
+        //Category ile  1-m ilişki tanımladık.
         public virtual Category Categories { get; set; }
     }
 }

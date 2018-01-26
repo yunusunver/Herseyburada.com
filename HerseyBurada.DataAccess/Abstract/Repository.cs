@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 
 namespace HerseyBurada.DataAccess.Abstract
 {
+
+    //generic tipte classlarla Crud işlemleri yapılıyor.
     public class Repository<T> : IRepository<T> where T : class
     {
         DatabaseContext db;

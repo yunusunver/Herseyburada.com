@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace HerseyBurada.DataAccess.Abstract
 {
+    //Veritabanı temel işlemlerini(CRUD) yaptığımız yerin interface'i
     interface IRepository<T> where T:class
     {
         List<T> List();
